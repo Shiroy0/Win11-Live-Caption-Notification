@@ -1,7 +1,7 @@
 ﻿While true{
     if WinExist("ahk_class Xaml_WindowedPopupClass")
     {   
-        sleep 40
+        sleep 50
         try 
         { 
             WinGetPos &X, &Y, &W, &H, "PopupHost" 

@@ -12,7 +12,6 @@ PopUpWindowWidth := 348
 While true{
     if WinExist("ahk_class Xaml_WindowedPopupClass")
     {   
-        sleep 50
         try 
         { 
             WinGetPos &X, &Y, &W, &H, PopUpWindowName
@@ -26,5 +25,5 @@ While true{
             }
         }
     }
-    sleep 10
+    sleep 60
 }

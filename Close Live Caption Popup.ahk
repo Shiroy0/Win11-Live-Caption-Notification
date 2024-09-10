@@ -13,6 +13,7 @@ CloseLiveCaptionPopup(PopUpWindowName := "PopupHost", PopUpWindowWidth := 340){
     While true{
         if WinExist("ahk_class Xaml_WindowedPopupClass")
         {   
+            sleep 40
             try 
             { 
                 WinGetPos &X, &Y, &W, &H, PopUpWindowName
@@ -26,6 +27,6 @@ CloseLiveCaptionPopup(PopUpWindowName := "PopupHost", PopUpWindowWidth := 340){
                 }
             }
         }
-        sleep 70
+        sleep 10
     }
 }
